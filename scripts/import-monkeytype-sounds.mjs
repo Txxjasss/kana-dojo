@@ -55,6 +55,11 @@ const extraSyntheticMap = [
   { id: 'x19', slug: 'ringmod-zap', label: 'ringmod zap' },
   { id: 'x20', slug: 'granular-shatter', label: 'granular shatter' },
   { id: 'x21', slug: 'subdrop-thud', label: 'subdrop thud' },
+  { id: 'x22', slug: 'silk-chime', label: 'silk chime' },
+  { id: 'x23', slug: 'amber-pluck', label: 'amber pluck' },
+  { id: 'x24', slug: 'velvet-tap', label: 'velvet tap' },
+  { id: 'x25', slug: 'aqua-bloom', label: 'aqua bloom' },
+  { id: 'x26', slug: 'luna-glint', label: 'luna glint' },
 ];
 
 const sampleRate = 44100;
@@ -519,6 +524,119 @@ function synthByName(name, index) {
     return normalize(lowPass(out, 280));
   }
 
+  if (name === 'silk-chime') {
+    const f = 640 + v * 6;
+    const a = renderTone({
+      freq: f,
+      durationSec: 0.11,
+      wave: 'sine',
+      amp: 0.24,
+      attack: 0.004,
+      releaseFactor: 0.72,
+    });
+    const b = renderTone({
+      freq: f * 2.01,
+      durationSec: 0.09,
+      wave: 'sine',
+      amp: 0.1,
+      attack: 0.003,
+      releaseFactor: 0.7,
+    });
+    return normalize(lowPass(mix([a, b]), 4200));
+  }
+
+  if (name === 'amber-pluck') {
+    const f = 300 + v * 4;
+    const a = renderTone({
+      freq: f,
+      durationSec: 0.085,
+      wave: 'triangle',
+      amp: 0.32,
+      attack: 0.0025,
+      releaseFactor: 0.58,
+    });
+    const b = renderTone({
+      freq: f * 2.5,
+      durationSec: 0.055,
+      wave: 'sine',
+      amp: 0.12,
+      attack: 0.002,
+      releaseFactor: 0.52,
+    });
+    return normalize(lowPass(mix([a, b]), 3600));
+  }
+
+  if (name === 'velvet-tap') {
+    const body = renderTone({
+      freq: 210 + v * 3,
+      durationSec: 0.075,
+      wave: 'sine',
+      amp: 0.3,
+      attack: 0.0035,
+      releaseFactor: 0.6,
+      pitchDrop: 0.2,
+    });
+    const tick = renderTone({
+      freq: 1200 + v * 10,
+      durationSec: 0.012,
+      wave: 'sine',
+      amp: 0.06,
+      attack: 0.0015,
+      releaseFactor: 0.5,
+    });
+    return normalize(lowPass(mix([body, tick]), 2400));
+  }
+
+  if (name === 'aqua-bloom') {
+    const a = renderTone({
+      freq: 260 + v * 5,
+      durationSec: 0.095,
+      wave: 'sine',
+      amp: 0.26,
+      attack: 0.004,
+      releaseFactor: 0.76,
+      pitchDrop: -0.22,
+    });
+    const b = renderTone({
+      freq: 390 + v * 4,
+      durationSec: 0.07,
+      wave: 'triangle',
+      amp: 0.1,
+      attack: 0.003,
+      releaseFactor: 0.7,
+    });
+    return normalize(lowPass(mix([a, b]), 3100));
+  }
+
+  if (name === 'luna-glint') {
+    const f = 520 + v * 7;
+    const a = renderTone({
+      freq: f,
+      durationSec: 0.08,
+      wave: 'sine',
+      amp: 0.2,
+      attack: 0.003,
+      releaseFactor: 0.66,
+    });
+    const b = renderTone({
+      freq: f * 3.12,
+      durationSec: 0.05,
+      wave: 'sine',
+      amp: 0.08,
+      attack: 0.002,
+      releaseFactor: 0.62,
+    });
+    const c = renderTone({
+      freq: f * 1.5,
+      durationSec: 0.04,
+      wave: 'triangle',
+      amp: 0.07,
+      attack: 0.002,
+      releaseFactor: 0.6,
+    });
+    return normalize(lowPass(mix([a, b, c]), 5000));
+  }
+
   return renderTone({ freq: 440, durationSec: 0.05, wave: 'sine', amp: 0.3 });
 }
 
@@ -614,6 +732,11 @@ function main() {
     'x19',
     'x20',
     'x21',
+    'x22',
+    'x23',
+    'x24',
+    'x25',
+    'x26',
   ];
   const all = [...fileBacked, ...monkeytypeSynthetic, ...extraSynthetic].sort(
     (a, b) => order.indexOf(a.id) - order.indexOf(b.id),

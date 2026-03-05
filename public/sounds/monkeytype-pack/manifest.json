@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-05T14:57:17.061Z",
+  "generatedAt": "2026-03-05T15:03:15.109Z",
   "source": {
     "monkeytypeSoundRoot": "C:\\Users\\reser\\monkeytype\\frontend\\static\\sound",
     "notes": "Names follow Monkeytype click sound labels plus KanaDojo synthetic expansion pack."
@@ -367,6 +367,101 @@
         "subdrop-thud_08",
         "subdrop-thud_09",
         "subdrop-thud_10"
+      ]
+    },
+    {
+      "id": "x22",
+      "label": "silk chime",
+      "slug": "silk-chime",
+      "sourceType": "synthetic-generated",
+      "monkeytypeSourceFolder": null,
+      "variants": [
+        "silk-chime_01",
+        "silk-chime_02",
+        "silk-chime_03",
+        "silk-chime_04",
+        "silk-chime_05",
+        "silk-chime_06",
+        "silk-chime_07",
+        "silk-chime_08",
+        "silk-chime_09",
+        "silk-chime_10"
+      ]
+    },
+    {
+      "id": "x23",
+      "label": "amber pluck",
+      "slug": "amber-pluck",
+      "sourceType": "synthetic-generated",
+      "monkeytypeSourceFolder": null,
+      "variants": [
+        "amber-pluck_01",
+        "amber-pluck_02",
+        "amber-pluck_03",
+        "amber-pluck_04",
+        "amber-pluck_05",
+        "amber-pluck_06",
+        "amber-pluck_07",
+        "amber-pluck_08",
+        "amber-pluck_09",
+        "amber-pluck_10"
+      ]
+    },
+    {
+      "id": "x24",
+      "label": "velvet tap",
+      "slug": "velvet-tap",
+      "sourceType": "synthetic-generated",
+      "monkeytypeSourceFolder": null,
+      "variants": [
+        "velvet-tap_01",
+        "velvet-tap_02",
+        "velvet-tap_03",
+        "velvet-tap_04",
+        "velvet-tap_05",
+        "velvet-tap_06",
+        "velvet-tap_07",
+        "velvet-tap_08",
+        "velvet-tap_09",
+        "velvet-tap_10"
+      ]
+    },
+    {
+      "id": "x25",
+      "label": "aqua bloom",
+      "slug": "aqua-bloom",
+      "sourceType": "synthetic-generated",
+      "monkeytypeSourceFolder": null,
+      "variants": [
+        "aqua-bloom_01",
+        "aqua-bloom_02",
+        "aqua-bloom_03",
+        "aqua-bloom_04",
+        "aqua-bloom_05",
+        "aqua-bloom_06",
+        "aqua-bloom_07",
+        "aqua-bloom_08",
+        "aqua-bloom_09",
+        "aqua-bloom_10"
+      ]
+    },
+    {
+      "id": "x26",
+      "label": "luna glint",
+      "slug": "luna-glint",
+      "sourceType": "synthetic-generated",
+      "monkeytypeSourceFolder": null,
+      "variants": [
+        "luna-glint_01",
+        "luna-glint_02",
+        "luna-glint_03",
+        "luna-glint_04",
+        "luna-glint_05",
+        "luna-glint_06",
+        "luna-glint_07",
+        "luna-glint_08",
+        "luna-glint_09",
+        "luna-glint_10"
       ]
     }
   ]

@@ -20,6 +20,11 @@ export type ClickSoundId =
   | 'ringmod-zap'
   | 'granular-shatter'
   | 'subdrop-thud'
+  | 'silk-chime'
+  | 'amber-pluck'
+  | 'velvet-tap'
+  | 'aqua-bloom'
+  | 'luna-glint'
 
 export interface ClickSoundOption {
   id: ClickSoundId;
@@ -373,6 +378,96 @@ export const CLICK_SOUND_OPTIONS: ClickSoundOption[] = [
       'subdrop-thud_08',
       'subdrop-thud_09',
       'subdrop-thud_10',
+    ],
+  },
+  {
+    id: 'silk-chime',
+    label: 'silk chime',
+    monkeytypeId: null,
+    sourceType: 'synthetic-generated',
+    variants: [
+      'silk-chime_01',
+      'silk-chime_02',
+      'silk-chime_03',
+      'silk-chime_04',
+      'silk-chime_05',
+      'silk-chime_06',
+      'silk-chime_07',
+      'silk-chime_08',
+      'silk-chime_09',
+      'silk-chime_10',
+    ],
+  },
+  {
+    id: 'amber-pluck',
+    label: 'amber pluck',
+    monkeytypeId: null,
+    sourceType: 'synthetic-generated',
+    variants: [
+      'amber-pluck_01',
+      'amber-pluck_02',
+      'amber-pluck_03',
+      'amber-pluck_04',
+      'amber-pluck_05',
+      'amber-pluck_06',
+      'amber-pluck_07',
+      'amber-pluck_08',
+      'amber-pluck_09',
+      'amber-pluck_10',
+    ],
+  },
+  {
+    id: 'velvet-tap',
+    label: 'velvet tap',
+    monkeytypeId: null,
+    sourceType: 'synthetic-generated',
+    variants: [
+      'velvet-tap_01',
+      'velvet-tap_02',
+      'velvet-tap_03',
+      'velvet-tap_04',
+      'velvet-tap_05',
+      'velvet-tap_06',
+      'velvet-tap_07',
+      'velvet-tap_08',
+      'velvet-tap_09',
+      'velvet-tap_10',
+    ],
+  },
+  {
+    id: 'aqua-bloom',
+    label: 'aqua bloom',
+    monkeytypeId: null,
+    sourceType: 'synthetic-generated',
+    variants: [
+      'aqua-bloom_01',
+      'aqua-bloom_02',
+      'aqua-bloom_03',
+      'aqua-bloom_04',
+      'aqua-bloom_05',
+      'aqua-bloom_06',
+      'aqua-bloom_07',
+      'aqua-bloom_08',
+      'aqua-bloom_09',
+      'aqua-bloom_10',
+    ],
+  },
+  {
+    id: 'luna-glint',
+    label: 'luna glint',
+    monkeytypeId: null,
+    sourceType: 'synthetic-generated',
+    variants: [
+      'luna-glint_01',
+      'luna-glint_02',
+      'luna-glint_03',
+      'luna-glint_04',
+      'luna-glint_05',
+      'luna-glint_06',
+      'luna-glint_07',
+      'luna-glint_08',
+      'luna-glint_09',
+      'luna-glint_10',
     ],
   },
 ];
