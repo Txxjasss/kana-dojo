@@ -229,7 +229,7 @@
     "note": "Now used nationwide. (Set 2)",
     "id": 23,
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "dialect": "あかん",
@@ -299,7 +299,7 @@
     "note": "Reason marker in Kyushu. (Set 2)",
     "id": 30,
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "dialect": "よか",
@@ -308,7 +308,7 @@
     "region": "Kyushu",
     "note": "Common Kyushu replacement. (Set 2)",
     "id": 31,
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
